@@ -26,7 +26,7 @@ def test_import():
     shop.save()
 
     supplier = factories.get_default_supplier()
-    supplier.shops = [shop]
+    supplier.shops.set([shop])
 
     assert shop.domain == shop_domain
 

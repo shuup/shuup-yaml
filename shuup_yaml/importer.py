@@ -13,7 +13,6 @@ from collections import defaultdict
 import six
 import yaml
 from django.utils.text import slugify
-from django.utils.translation import override
 
 from shuup.core.models import (
     Attribute, AttributeType, Category, CategoryStatus, CategoryVisibility,
@@ -21,7 +20,6 @@ from shuup.core.models import (
     ProductType, ProductVariationVariable, ProductVariationVariableValue,
     SalesUnit, ShopProduct, Supplier
 )
-from shuup.utils.djangoenv import has_installed
 from shuup.utils.filer import filer_image_from_data
 from shuup.utils.numbers import parse_decimal_string
 
